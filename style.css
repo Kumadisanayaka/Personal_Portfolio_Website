@@ -10,9 +10,9 @@ body{
 
 #header{
     min-height: 100vh;
-    background-image: url(/image/background\ \(1\).jpg);
+    background-image: url(/image/background\ \(1\)-Picsart-AiImageEnhancer.png);
     background-size: cover;
-    background-position: center top;
+    background-position: center top right;
     position: relative;
 }
 
@@ -30,8 +30,13 @@ body{
 
 .nav-link{
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
     gap: 35px;
     margin-left: auto;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .nav-link a{
