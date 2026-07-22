@@ -21,10 +21,20 @@ body{
 }
 
 .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 0;
+
+    padding: 25px 10%;
+
+    background: rgba(0, 0, 0, 0.7);
+
 }
 
 .nav-link{
@@ -293,7 +303,18 @@ form button:hover{
     background: #ff004f;
 }
 
+/*------------------footer--------------------*/
 
+footer {
+    padding: 25px 0;
+    background: #262626;
+    text-align: center;
+}
+
+footer p {
+    color: #ababab;
+    font-size: 14px;
+}
 
 
 
