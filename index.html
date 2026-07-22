@@ -4,202 +4,484 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Personal Portfolio Website</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="/function.js"></script>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script src="function.js" defer></script>
 </head>
 
 <body>
+
     <div id="header">
+
         <div class="container">
+
             <nav class="navbar">
-                <div class="nav-link">
-                    <a href="#header">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+
+                <div class="nav-link" id="sideMenu">
+
+                    <i class="fa-solid fa-xmark close-icon"
+                        onclick="closeMenu()"></i>
+
+                    <a href="#header" onclick="closeMenu()">Home</a>
+
+                    <a href="#about" onclick="closeMenu()">About</a>
+
+                    <a href="#projects" onclick="closeMenu()">Projects</a>
+
+                    <a href="#contact" onclick="closeMenu()">Contact</a>
+
                 </div>
+
+                <i class="fa-solid fa-bars menu-icon"
+                    onclick="openMenu()"></i>
+
             </nav>
+
+
             <div class="header-text">
-                <p>Software Engineering Student & Java Developer</p>
-                <h1>Hi, I'm <span>Pathum</span> <br> Disanayaka <br>from Sri Lanka</h1>
+
+                <p>
+                    Software Engineering Student & Java Developer
+                </p>
+
+                <h1>
+                    Hi, I'm <span>Pathum</span>
+                    <br>
+                    Disanayaka
+                    <br>
+                    from Sri Lanka
+                </h1>
+
             </div>
+
         </div>
+
     </div>
+
+
     <!-----------------------About section--------------------------->
+
     <div id="about">
+
         <div class="container">
+
             <div class="row">
+
                 <div class="about-col-1">
+
                     <img src="/image/card_image.jpeg">
+
                 </div>
+
+
                 <div class="about-col-2">
-                    <h1 class="sub-tit">About me</h1>
-                    <p>I am a Software Engineering student and Java Developer passionate about building practical
-                        software applications and solving problems through code. <br><br>
 
-                        My main focus is Java development, Object-Oriented Programming, SQL, and software engineering. I
-                        enjoy learning by building real-world projects and continuously improving my technical skills.
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+
+
+                    <p>
+                        I am a Software Engineering student and Java Developer passionate about building practical
+                        software applications and solving problems through code.
+
+                        <br><br>
+
+                        My main focus is Java development, Object-Oriented Programming, SQL, and software engineering.
+                        I enjoy learning by building real-world projects and continuously improving my technical skills.
                     </p>
+
+
                     <div class="tab-titels">
-                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-link" onclick="opentab('experiance')">Experiance</p>
-                        <p class="tab-link" onclick="opentab('education')">Education</p>
+
+                        <p class="tab-link active-link"
+                            onclick="opentab('skills', this)">
+
+                            Skills
+
+                        </p>
+
+
+                        <p class="tab-link"
+                            onclick="opentab('experience', this)">
+
+                            Experience
+
+                        </p>
+
+
+                        <p class="tab-link"
+                            onclick="opentab('education', this)">
+
+                            Education
+
+                        </p>
+
                     </div>
-                    <div class="tab-content active-tab" id="skills">
+
+
+                    <div class="tab-content active-tab"
+                        id="skills">
+
                         <ul>
-                            <li><span>Web Development</span><br>Building modern and responsive websites.</li>
-                            <li><span>Desktop Application Development</span><br>Developing applications with Java and
-                                Java Swing.</li>
-                            <li><span>Object-Oriented Programming</span><br>Building applications using core OOP
-                                concepts.</li>
-                            <li><span>Database Development</span><br>Working with SQL and MySQL.</li>
-                            <li><span>Software Development</span><br>Building practical software solutions.</li>
-                            <li><span>Version Control</span><br>Using Git and GitHub to manage source code and
-                                development projects.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="education">
-                        <ul>
-                            <li>
-                                <span>Diploma in Software Engineering</span><br>
-                                Institute of Computer Engineering Technology (ICET) · 2025 – Present
-                            </li>
 
                             <li>
-                                <span>Diploma in Information Technology</span><br>
-                                ESOFT Metro Campus · 2019 – 2020
+                                <span>Web Development</span>
+                                <br>
+                                Building modern and responsive websites.
                             </li>
 
+
                             <li>
-                                <span>G.C.E. Advanced Level</span><br>
-                                Kalyani Pradeepa University Pirivena · 2018
+                                <span>Desktop Application Development</span>
+                                <br>
+                                Developing applications with Java and Java Swing.
                             </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content" id="experiance">
-                        <ul>
+
+
                             <li>
-                                <span>Secretary</span><br>
+                                <span>Object-Oriented Programming</span>
+                                <br>
+                                Building applications using core OOP concepts.
+                            </li>
+
+
+                            <li>
+                                <span>Database Development</span>
+                                <br>
+                                Working with SQL and MySQL.
+                            </li>
+
+
+                            <li>
+                                <span>Software Development</span>
+                                <br>
+                                Building practical software solutions.
+                            </li>
+
+
+                            <li>
+                                <span>Version Control</span>
+                                <br>
+                                Using Git and GitHub to manage source code and development projects.
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="tab-content"
+                        id="experience">
+
+                        <ul>
+
+                            <li>
+
+                                <span>Secretary</span>
+
+                                <br>
+
                                 L&T Construction · Dec 2024 – Nov 2025
+
                             </li>
 
+
                             <li>
-                                <span>Office Associate</span><br>
+
+                                <span>Office Associate</span>
+
+                                <br>
+
                                 Ocean Lanka (Pvt) Ltd · Jun 2024 – Oct 2024
+
                             </li>
+
                         </ul>
+
                     </div>
+
+
+                    <div class="tab-content"
+                        id="education">
+
+                        <ul>
+
+                            <li>
+
+                                <span>Diploma in Software Engineering</span>
+
+                                <br>
+
+                                Institute of Computer Engineering Technology (ICET) · 2025 – Present
+
+                            </li>
+
+
+                            <li>
+
+                                <span>Diploma in Information Technology</span>
+
+                                <br>
+
+                                ESOFT Metro Campus · 2019 – 2020
+
+                            </li>
+
+
+                            <li>
+
+                                <span>G.C.E. Advanced Level</span>
+
+                                <br>
+
+                                Kalyani Pradeepa University Pirivena · 2018
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
+
 
     <!----------------------Project------------------------>
+
     <div id="projects">
+
         <div class="container">
-            <h1 class="sub-title">My Projects</h1>
+
+            <h1 class="sub-title">
+                My Projects
+            </h1>
+
+
             <div class="project-list">
+
+
                 <div class="project">
+
                     <img src="/image/project-1.png">
 
+
                     <div class="project-info">
-                        <h2>Smart Home Control System</h2>
 
-                        <p> A Java Swing-based smart home control system for managing
-                            and monitoring devices across multiple rooms.</p>
+                        <h2>
+                            Smart Home Control System
+                        </h2>
 
-                        <span>Java · Java Swing · OOP <br></span>
 
-                        <a href="https://github.com/Kumadisanayaka/Smart_Home_System" target="_blank">
+                        <p>
+                            A Java Swing-based smart home control system for managing
+                            and monitoring devices across multiple rooms.
+                        </p>
+
+
+                        <span>
+                            Java · Java Swing · OOP
+                        </span>
+
+
+                        <a href="https://github.com/Kumadisanayaka/Smart_Home_System"
+                            target="_blank">
+
                             View on GitHub →
+
                         </a>
+
                     </div>
+
                 </div>
 
+
                 <div class="project">
+
                     <img src="/image/project-2.png">
 
+
                     <div class="project-info">
-                        <h2>Burger Shop Management System</h2>
+
+                        <h2>
+                            Burger Shop Management System
+                        </h2>
+
 
                         <p>
                             A desktop application for managing burger shop orders,
                             customers, and order statuses.
                         </p>
 
-                        <span>Java · Java Swing · OOP <br> </span>
 
-                        <a href="https://github.com/Kumadisanayaka/burger_Shop_Management_System_V4" target="_blank">
+                        <span>
+                            Java · Java Swing · OOP
+                        </span>
+
+
+                        <a href="https://github.com/Kumadisanayaka/burger_Shop_Management_System_V4"
+                            target="_blank">
+
                             View on GitHub →
+
                         </a>
+
                     </div>
+
                 </div>
 
+
                 <div class="project">
+
                     <img src="/image/project-3.png">
 
+
                     <div class="project-info">
-                        <h2>iFriend Contact Organizer</h2>
+
+                        <h2>
+                            iFriend Contact Organizer
+                        </h2>
+
 
                         <p>
                             A contact management application for adding, searching,
                             updating, and managing contacts.
                         </p>
 
-                        <span>Java · Java Swing · ArrayList <br></span>
 
-                        <a href="https://github.com/Kumadisanayaka/Ifriend_Contact_Organizer" target="_blank">
+                        <span>
+                            Java · Java Swing · ArrayList
+                        </span>
+
+
+                        <a href="https://github.com/Kumadisanayaka/Ifriend_Contact_Organizer"
+                            target="_blank">
+
                             View on GitHub →
+
                         </a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </div>
 
-    <!---------------------------contact---------------------------------->
+
+    <!---------------------------Contact---------------------------------->
+
     <div id="contact">
+
         <div class="container">
+
             <div class="row">
+
+
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+
+                    <h1 class="sub-title">
+                        Contact Me
+                    </h1>
+
+
                     <p>
+
                         <i class="fa-solid fa-envelope"></i>
+
                         kumadisanayaka18@gmail.com
+
                     </p>
+
+
                     <p>
+
                         <i class="fa-solid fa-phone"></i>
+
                         +94-70-5614-020
+
                     </p>
+
 
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/pathumx/" target="_blank">
+
+
+                        <a href="https://www.linkedin.com/in/pathumx/"
+                            target="_blank">
+
                             <i class="fa-brands fa-linkedin"></i>
+
                             LinkedIn
+
                         </a>
-                        <a href="https://github.com/Kumadisanayaka" target="_blank">
+
+
+                        <a href="https://github.com/Kumadisanayaka"
+                            target="_blank">
+
                             <i class="fa-brands fa-github"></i>
+
                             GitHub
+
                         </a>
+
+
                     </div>
+
                 </div>
+
 
                 <div class="contact-right">
+
                     <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit">submit</button>
+
+                        <input type="text"
+                            name="Name"
+                            placeholder="Your Name"
+                            required>
+
+
+                        <input type="email"
+                            name="Email"
+                            placeholder="Your Email"
+                            required>
+
+
+                        <textarea name="Message"
+                            rows="6"
+                            placeholder="Your Message"></textarea>
+
+
+                        <button type="submit">
+                            Submit
+                        </button>
+
                     </form>
+
                 </div>
+
             </div>
+
         </div>
-    </div>
-    <!---------------------------Footer---------------------------------->
 
     </div>
+
+
+    <!---------------------------Footer---------------------------------->
 
     <footer>
 
@@ -213,9 +495,6 @@
 
     </footer>
 
-</body>
-
-</html>
 </body>
 
 </html>
