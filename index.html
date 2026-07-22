@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="/function.js"></script>
 </head>
 
 <body>
@@ -41,11 +42,11 @@
                         enjoy learning by building real-world projects and continuously improving my technical skills.
                     </p>
                     <div class="tab-titels">
-                        <p class="tab-link active-link">Skills</p>
-                        <p class="tab-link">Experiance</p>
-                        <p class="tab-link">Education</p>
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content active-tab" id="skills">
                         <ul>
                             <li><span>Web Development</span><br>Building modern and responsive websites.</li>
                             <li><span>Desktop Application Development</span><br>Developing applications with Java and
@@ -58,7 +59,7 @@
                                 development projects.</li>
                         </ul>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content" id="education">
                         <ul>
                             <li>
                                 <span>Diploma in Software Engineering</span><br>
@@ -76,7 +77,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content" id="experiance">
                         <ul>
                             <li>
                                 <span>Secretary</span><br>
