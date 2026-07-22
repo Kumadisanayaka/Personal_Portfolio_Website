@@ -21,11 +21,10 @@ body{
 }
 
 .navbar{
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 8%;
+    padding: 25px 0;
 }
 
 .nav-link{
@@ -141,5 +140,13 @@ body{
 .tab-content ul li span{
     color: #b54769;
     font-size: 14px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
 }
 
